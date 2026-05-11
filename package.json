@@ -59,7 +59,7 @@
     "handlebars": "^4.7.8",
     "inquirer": "^13.4.1",
     "jiti": "^2.6.1",
-    "js-utils-kit": "^4.0.0",
+    "js-utils-kit": "^5.0.0",
     "semver": "^7.7.4",
     "use-colors": "^0.1.0",
     "use-git": "^1.0.1",

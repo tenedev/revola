@@ -1,6 +1,7 @@
 import pkg, { name } from '../../package.json' with { type: 'json' };
+import schema from '../../schema.json' with { type: 'json' };
 
-export { pkg };
+export { pkg, schema };
 
 export const CONFIG_FILES = [
   `.${name}.json`,

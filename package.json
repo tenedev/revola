@@ -28,7 +28,7 @@
     "access": "public",
     "provenance": false
   },
-  "packageManager": "pnpm@11.1.0",
+  "packageManager": "pnpm@11.1.1",
   "files": [
     "dist",
     "templates",

@@ -2,8 +2,8 @@ import type { PackageJson } from 'js-utils-kit';
 import type z from 'zod';
 import type { REVOLA_ENV } from '../constants';
 import type { KNOWN_COMMANDS, KNOWN_FLAGS } from '../constants/cli';
-import type { ctx } from '../ctx';
-import type { NamespaceStore } from '../ns-store';
+import type { ctx } from '../runtime/ctx';
+import type { NamespaceStore } from '../runtime/ns-store';
 import type { ConfigSchema } from '../schemas/config';
 import type { PluginsSchema } from '../schemas/config/plugins';
 

@@ -3,7 +3,7 @@ import { envRef } from 'js-utils-kit';
 import colors from 'use-colors';
 import zylog, { type ZylogLevel } from 'zylog';
 import { REVOLA_ENV } from '../constants';
-import { ctx } from '../ctx';
+import { ctx } from '../runtime/ctx';
 import type { RevolaEnv } from '../types';
 import { hasFlag } from './cli';
 

@@ -5,7 +5,7 @@ import colors from 'use-colors';
 import zylog from 'zylog';
 import config from '../config';
 import { PHASE_LOGS } from '../constants';
-import { NamespaceStore } from '../ns-store';
+import { NamespaceStore } from '../runtime/ns-store';
 import type { Ctx, Fn, HookName, Plugin, PluginEntry, PluginKeys } from '../types';
 import { exec, toArray } from '../utils';
 import { jiti } from '../utils/jiti';

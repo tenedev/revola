@@ -1,7 +1,9 @@
-import { isCI } from 'js-utils-kit';
+import { join } from 'node:path';
+import { isCI, isFile } from 'js-utils-kit';
+import git from 'use-git';
 import zylog from 'zylog';
-import type { Config, ScopedStore } from './types';
-import { args, hasFlag } from './utils/cli';
+import type { Config, ScopedStore } from '../types';
+import { args, hasFlag } from '../utils/cli';
 
 export const ctx = {
   /** Current working directory where the CLI is executed */
@@ -45,4 +47,12 @@ export const ctx = {
    * ```
    */
   store: {} as ScopedStore,
+
+  /** Indicates if a package.json file exists in the current working directory */
+  async hasPackageJson() {
+    return isFile(join(this.cwd, 'package.json'));
+  },
+
+  /** Indicates whether Git is initialized in the current working directory. */
+  hasGit: await git.isInitialized(),
 };

@@ -6,7 +6,7 @@ import z from 'zod';
 import zylog from 'zylog';
 import { DEFAULT_CONFIG } from '../constants';
 import { CONFIG_FILES } from '../constants/paths';
-import { ctx } from '../ctx';
+import { ctx } from '../runtime/ctx';
 import { ConfigSchema } from '../schemas/config';
 import type { Config, Json, UserConfig } from '../types';
 import { jiti } from '../utils/jiti';

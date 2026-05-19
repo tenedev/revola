@@ -8,8 +8,9 @@ import config, { setConfig } from '../lib/config';
 import { CORE_PLUGINS } from '../lib/constants';
 import { EXAMPLES, KNOWN_COMMANDS, KNOWN_FLAGS } from '../lib/constants/cli';
 import { pkg } from '../lib/constants/paths';
-import { ctx } from '../lib/ctx';
 import { PluginManager } from '../lib/plugins/manager';
+import { ctx } from '../lib/runtime/ctx';
+import { prepareRuntime } from '../lib/runtime/prepare';
 import { resolveLogLevel } from '../lib/utils';
 import { hasFlag } from '../lib/utils/cli';
 import { renderTemplate } from '../lib/utils/handlebars';
@@ -51,6 +52,8 @@ if (hasFlag(['--help', '-h'])) {
 await setConfig();
 
 zylog.level = resolveLogLevel() ?? config.logLevel ?? zylog.level;
+
+await prepareRuntime();
 
 await runCommand('init', init);
 

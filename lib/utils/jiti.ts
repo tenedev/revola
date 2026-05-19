@@ -1,4 +1,4 @@
 import { createJiti } from 'jiti';
-import { ctx } from '../ctx';
+import { ctx } from '../runtime/ctx';
 
 export const jiti = createJiti(ctx.cwd);

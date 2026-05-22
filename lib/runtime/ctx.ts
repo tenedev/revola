@@ -1,13 +1,25 @@
 import { join } from 'node:path';
-import { isCI, isFile } from 'js-utils-kit';
+import { isCI, isFile, readJsonFile } from 'js-utils-kit';
 import git from 'use-git';
 import zylog from 'zylog';
-import type { Config, ScopedStore } from '../types';
+import type { Config, Json, ScopedStore } from '../types';
 import { args, hasFlag } from '../utils/cli';
+
+const cwd = process.cwd();
+
+async function createFileCtx<T = unknown>(path: string) {
+  const exists = await isFile(path);
+
+  return {
+    path,
+    exists,
+    content: exists ? await readJsonFile<T>(path) : null,
+  } as const;
+}
 
 export const ctx = {
   /** Current working directory where the CLI is executed */
-  cwd: process.cwd(),
+  cwd,
 
   /** Indicates if running in a CI environment */
   isCI,
@@ -48,9 +60,11 @@ export const ctx = {
    */
   store: {} as ScopedStore,
 
-  /** Indicates if a package.json file exists in the current working directory */
-  async hasPackageJson() {
-    return isFile(join(this.cwd, 'package.json'));
+  /** Files */
+  files: {
+    packageJson: await createFileCtx<Json>(join(cwd, 'package.json')),
+    denoJson: await createFileCtx(join(cwd, 'deno.json')),
+    jsrJson: await createFileCtx(join(cwd, 'jsr.json')),
   },
 
   /** Indicates whether Git is initialized in the current working directory. */

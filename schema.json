@@ -57,6 +57,7 @@
     },
     "git": {
       "default": {
+        "enable": true,
         "cleanWorkingDirectory": true,
         "upstream": true,
         "author": {
@@ -76,6 +77,11 @@
       },
       "type": "object",
       "properties": {
+        "enable": {
+          "default": true,
+          "description": "Enable or disable Git integration.",
+          "type": "boolean"
+        },
         "cleanWorkingDirectory": {
           "default": true,
           "description": "If true, Revola will check for a clean working directory before performing versioning operations.",

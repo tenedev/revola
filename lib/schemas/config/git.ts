@@ -17,6 +17,8 @@ const AuthorSchema = z
 
 export const GitSchema = z
   .object({
+    enable: z.boolean().default(true).describe('Enable or disable Git integration.'),
+
     cleanWorkingDirectory: z
       .boolean()
       .default(true)

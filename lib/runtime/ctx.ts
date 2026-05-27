@@ -63,8 +63,8 @@ export const ctx = {
   /** Files */
   files: {
     packageJson: await createFileCtx<Json>(join(cwd, 'package.json')),
-    denoJson: await createFileCtx(join(cwd, 'deno.json')),
-    jsrJson: await createFileCtx(join(cwd, 'jsr.json')),
+    denoJson: await createFileCtx<Json>(join(cwd, 'deno.json')),
+    jsrJson: await createFileCtx<Json>(join(cwd, 'jsr.json')),
   },
 
   /** Indicates whether Git is initialized in the current working directory. */

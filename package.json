@@ -57,7 +57,7 @@
     "arglet": "^1.1.0",
     "echo-banner": "^0.3.0",
     "handlebars": "^4.7.8",
-    "inquirer": "^13.4.1",
+    "inquirer": "^13.4.3",
     "jiti": "^2.6.1",
     "js-utils-kit": "^5.1.0",
     "semver": "^7.7.4",

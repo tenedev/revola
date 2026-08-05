@@ -80,7 +80,7 @@
     "prettier-plugin-astro": "^0.14.1",
     "tsdown": "^0.22.14",
     "typescript": "^6.0.3",
-    "vitest": "^4.1.4"
+    "vitest": "^4.1.10"
   },
   "prettier": "@tenedev/prettier-config",
   "lint-staged": {

@@ -4,7 +4,7 @@ ci:
 
 repos:
   - repo: https://github.com/teneplaysofficial/pre-commit
-    rev: v1.0.3
+    rev: v1.2.0
     hooks:
       - id: biome
       - id: prettier

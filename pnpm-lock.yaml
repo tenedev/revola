@@ -45,8 +45,8 @@ importers:
         specifier: ^2.4.12
         version: 2.4.12
       '@tenedev/prettier-config':
-        specifier: ^1.3.0
-        version: 1.3.0(prettier@3.8.3)
+        specifier: ^1.3.3
+        version: 1.3.3(prettier@3.8.3)
       '@tenedev/tsconfig':
         specifier: ^0.0.4
         version: 0.0.4(typescript@6.0.3)
@@ -1246,10 +1246,10 @@ packages:
         integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==,
       }
 
-  '@tenedev/prettier-config@1.3.0':
+  '@tenedev/prettier-config@1.3.3':
     resolution:
       {
-        integrity: sha512-2Ofz06jCqpDT8VqoiPn6dF9KcBe+DnZUEv614mvo+Vvnmn5e/QvOg9G1Esg83uZ/LwslBjR9J3tHs8uw/giG7A==,
+        integrity: sha512-Px4dUpF+/lbJkzbCBcbImG37nSx/ncFw/L+FnPJSwFISpnroECsw0vV8v7ndjHEapVquewIdy08Tffx+BhXPOA==,
       }
     engines: { node: '>=14' }
     peerDependencies:
@@ -2436,10 +2436,10 @@ packages:
       }
     engines: { node: ^14.15.0 || >=16.0.0 }
 
-  prettier-plugin-packagejson@3.0.0:
+  prettier-plugin-packagejson@3.0.2:
     resolution:
       {
-        integrity: sha512-z8/QmPSqx/ANvvQMWJSkSq1+ihBXeuwDEYdjX3ZjRJ5Ty1k7vGbFQfhzk2eDe0rwS/TNyRjWK/qnjJEStAOtDw==,
+        integrity: sha512-kmoj3hEynXwoHDo8ZhmWAIjRBoQWCDUVackiWfSDWdgD0rS3LGB61T9zoVbume/cotYdCoadUh4sqViAmXvpBQ==,
       }
     peerDependencies:
       prettier: ^3
@@ -3676,10 +3676,10 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@tenedev/prettier-config@1.3.0(prettier@3.8.3)':
+  '@tenedev/prettier-config@1.3.3(prettier@3.8.3)':
     dependencies:
       prettier: 3.8.3
-      prettier-plugin-packagejson: 3.0.0(prettier@3.8.3)
+      prettier-plugin-packagejson: 3.0.2(prettier@3.8.3)
       sort-package-keys: 2.0.0
 
   '@tenedev/tsconfig@0.0.4(typescript@6.0.3)':
@@ -4313,7 +4313,7 @@ snapshots:
       prettier: 3.8.3
       sass-formatter: 0.7.9
 
-  prettier-plugin-packagejson@3.0.0(prettier@3.8.3):
+  prettier-plugin-packagejson@3.0.2(prettier@3.8.3):
     dependencies:
       sort-package-json: 3.6.0
     optionalDependencies:

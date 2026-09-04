@@ -56,7 +56,7 @@
   "dependencies": {
     "arglet": "^1.1.0",
     "echo-banner": "^0.3.0",
-    "handlebars": "^4.7.8",
+    "handlebars": "^4.7.9",
     "inquirer": "^14.2.0",
     "jiti": "^2.6.1",
     "js-utils-kit": "^5.1.0",
